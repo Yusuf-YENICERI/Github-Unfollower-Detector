@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="options.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet"> 
+  </head>
+
+<body>
+  <div id="popup-content">
+    <div class="wrapper">
+        <div class="container">
+            <div class="logo">
+                <img src="../icons/analytics.svg" />
+            </div>
+            <div class="name">
+                Github Follower Detector
+            </div>
+            <div class="enabled">
+                <div class="status">
+                    Disabled
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="green">
+                        </div>
+                        <div class="wheel">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="margin-top: 20px;"/>
+        <div class="container-info">
+          <div class="container-item">
+            <span class="text" >Username:</span>
+            <input type="text" id="user-id" />
+          </div>
+          <div class="container-item">
+            <span class="text" >Personal Token:</span>
+            <input type="password" id="token-id" />
+          </div>
+          <button class="save">Save</button>
+        </div>
+
+        <p style="margin-top: 20px; font-size: 0.8rem; text-align: center;">
+          You should insert your own Personal Token to be able to use Github API. <a href="https://github.com/settings/tokens/new">Click here</a> to generate it. <i>Your token doesn't need any kind of scope.</i>
+        </p>
+    </div>
+  </div>
+  <div id="error-content" class="hidden">
+    <p>Can't beastify this web page.</p><p>Try a different page.</p>
+  </div>
+  <script src="options.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+html, body {
+    width: 400px;
+}
+
+.hidden {
+    display: none;
+}
+
+.button {
+    margin: 3% auto;
+    padding: 4px;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.beast:hover {
+    background-color: #CFF2F2;
+}
+
+.beast {
+    background-color: #E5F2F2;
+}
+
+.reset {
+    background-color: #FBFBC9;
+}
+
+.reset:hover {
+    background-color: #EAEA9D;
+}
+
+.logo{
+    width: 20px;
+    line-height: 10px;
+    margin-right: 5px;
+}
+
+.wrapper{
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.container .name{
+    flex-grow: 3;
+}
+
+.container .enabled{
+    flex-grow: 1;
+}
+
+.enabled{
+    display: flex;
+    flex-direction: row;   
+}
+
+.enabled .status{
+    margin-right: 10px;
+}
+
+.enabled .item .container{
+    position: relative;
+    background-color: rgb(165, 165, 165, 0.3);
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 40px;
+    height: 100%;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75) inset;
+-webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75) inset;
+-moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75) inset;
+}
+
+.enabled .item .green{
+    background-color: red;
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: relative;
+    transition: 1s ease;
+}
+
+
+.enabled .item .container .wheel{
+    position: absolute;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 50%;
+    width: 50%;
+    height: 100%;
+    transform: scale(1.2);
+    margin-top: -2px;
+    transition: 1s ease;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+
+
+.container-info{
+}
+
+.container-item{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+span.text{
+    width: 120px;
+    padding: 5px;
+}
+
+.save{
+    margin-left: 15px;
+    background-color: rgb(31, 99, 150);
+    border: 1px solid rgb(31, 99, 150);
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: white;
+}

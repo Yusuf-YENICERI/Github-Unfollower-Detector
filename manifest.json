@@ -1,0 +1,51 @@
+
+
+
+{
+
+    "manifest_version": 2,
+    "name": "Github Follower Detector",
+    "version": "1.0",
+  
+    "description": "Want to only follow your followers? Then this is the right extension inshaAllah .",
+    "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
+    "icons": {
+      "48": "icons/analytics.svg"
+    },
+  
+    "permissions": [
+      "activeTab", "tabs", "storage", "https://api.github.com/*"
+    ],
+  
+    "browser_action": {
+      "default_icon": "icons/analytics.svg",
+      "default_title": "Github Follower Detector",
+      "default_popup": "popup/options.html"
+    },
+
+    "background": {
+      "scripts": ["background.js"]
+    },
+  
+    "web_accessible_resources": [
+      "icons/analytics.svg"
+    ],
+
+
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["main.js"]
+    }
+  ],
+
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "githubfollowerdetector@example.com",
+        "strict_min_version": "42.0"
+      }
+    }
+    
+  
+  }
+  
