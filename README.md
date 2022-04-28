@@ -5,7 +5,7 @@
   <br/>
   <h3>Github Follower Detector</h3>
   <br/>
-  <span>An extension to detect who follows you!</span>
+  <span>An extension to detect who doesn't follow you!</span>
 </div>
 
 <br/>
@@ -19,7 +19,7 @@
 
 ## 🚀 Why should i use this?
 
-It helps you to detect who follows you. The following one might be a user you are following or someone else following. So it works for any user.
+It helps you to detect who doesn't follow you. The not following one might be a user you are following or someone else following. So it works for any user.
 
 
 ## :exclamation: Requirements
